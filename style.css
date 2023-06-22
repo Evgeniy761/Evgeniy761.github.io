@@ -1,0 +1,76 @@
+
+body {
+  font-family: Roboto, sans-serif;
+  background: rain-20.gif;
+}
+.main {
+  position: relative;
+  /* размеры блока, который формирует размер страницы отображения на экране */
+  /* ширина блока равна ширине экрана */
+  width: 100vw;
+  /* высота блока равна минимум высоте экрана */
+  min-height: 100vh;
+  /* а также высота может быть больше высоты экрана если требуется вместить содержимое страницы */
+  height: 100%;
+  /* картинка фона */
+  background-image: url(https://kartinkin.net/uploads/posts/2021-07/thumbs/1626727128_5-kartinkin-com-p-tekstura-zapotevshego-stekla-krasivo-10.jpg);
+  /* настройки отображения картинки */
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.container {
+  padding: 0 40px;
+  margin-left: 700px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 25px;
+  margin: 25px 0;
+}
+Ul {
+  font-size: 20px;
+}
+
+  /* Свойства фотографии*/
+.photo {
+  border-radius: 100px;
+  /* Радиус скругления */
+  border: 3px solid transparent;
+  /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+}
+
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid #FFD700;
+}
+
+  /* Свойства ссылок */
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+  /* Что делать при наведении на ссылку */
+a:hover {
+  color:darkred;
+}
+
+  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #dadada;
+  width: 300px;
+}
